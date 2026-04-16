@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansvarlig Spilling – Wildrobin Casino Norge</title>
+  <meta name="description" content="Wildrobin Casino er opptatt av ansvarlig spilling. Les om våre verktøy, retningslinjer og ressurser for å hjelpe deg med å spille trygt og ansvarlig på vår offisielle norske nettside.">
+  <link rel="canonical" href="/responsible-gambling/">
+  <link rel="icon" type="image/x-icon" href="../wildrobin%20images/favicon%20(2).ico">
+  <style>
+    :root {
+      --header-footer-bg: #201109;
+      --button-green: #44a500;
+      --main-bg: #1a0a03;
+      --surface: #2a1408;
+      --surface-soft: #341b0c;
+      --text-main: #fff4db;
+      --text-muted: #e6cca4;
+      --line: #5f341b;
+      --accent: #ffcb73;
+      --radius: 14px;
+      --shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Trebuchet MS", "Gill Sans", sans-serif;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255, 190, 110, 0.18), transparent 38%),
+        radial-gradient(circle at 88% 90%, rgba(120, 255, 133, 0.08), transparent 36%),
+        var(--main-bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #ffd89c;
+      letter-spacing: 0.2px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--header-footer-bg);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .header-inner {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 10px 0;
+    }
+
+    .logo img {
+      width: 172px;
+      height: auto;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .main-nav a {
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 1rem;
+      padding-bottom: 2px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .main-nav a:hover {
+      border-color: var(--accent);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .header-btn {
+      background: var(--button-green);
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .header-btn:hover {
+      filter: brightness(1.06);
+      transform: translateY(-1px);
+    }
+
+    main {
+      padding: 52px 0;
+    }
+
+    .content-block {
+      background: linear-gradient(160deg, rgba(255, 200, 120, 0.06), rgba(70, 35, 16, 0.7));
+      border-radius: 18px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .content-block h1 {
+      margin-bottom: 18px;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+    }
+
+    .content-block h2 {
+      margin-top: 22px;
+      margin-bottom: 10px;
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+    }
+
+    .content-block h3 {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      color: #ffd197;
+      font-size: 1.18rem;
+    }
+
+    .content-block p {
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .content-block ul,
+    .content-block ol {
+      padding-left: 22px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .content-block li {
+      margin-bottom: 5px;
+    }
+
+    .content-block table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      background: rgba(18, 8, 4, 0.45);
+      min-width: 520px;
+    }
+
+    .content-block table th,
+    .content-block table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+
+    .content-block table th {
+      background: rgba(255, 203, 115, 0.16);
+    }
+
+    .content-block .review,
+    .content-block .faq-item {
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 10px;
+    }
+
+    .page-updated {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      background: rgba(35, 16, 8, 0.9);
+      padding: 16px 0;
+      text-align: center;
+      color: #ffd79c;
+      font-weight: 700;
+    }
+
+    .site-footer {
+      background: var(--header-footer-bg);
+      padding: 34px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-title {
+      color: #ffcc7a;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .trust-grid a {
+      background: #fff;
+      border-radius: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px;
+    }
+
+    .trust-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+      color: #f6d5a7;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+
+    .provider-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .provider-grid img {
+      width: 100%;
+      height: 68px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .copyright {
+      text-align: center;
+      color: #eecf9c;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 1024px) {
+      .trust-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .provider-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        min-height: 58px;
+        padding: 6px 0;
+        gap: 8px;
+      }
+
+      .logo img {
+        width: 98px;
+      }
+
+      .main-nav {
+        display: none;
+      }
+
+      .header-actions {
+        gap: 6px;
+      }
+
+      .header-btn {
+        padding: 7px 10px;
+        font-size: 0.82rem;
+        border-radius: 6px;
+      }
+
+      main {
+        padding: 32px 0;
+      }
+
+      .content-block {
+        padding: 20px;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .provider-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html" aria-label="Wildrobin Casino forside">
+        <img src="../wildrobin%20images/wildrobin%20logo.webp" alt="Wildrobin logo">
+      </a>
+
+      <nav class="main-nav" aria-label="Hovedmeny">
+        <a href="../bonus/">Kampanjer</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="../login/" class="header-btn">Logg inn</a>
+        <a href="/go/" class="header-btn">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container content-block">
+<h1>Ansvarlig Spilling hos Wildrobin Casino</h1>
+
+<p>Hos Wildrobin Casino er ansvarlig spilling en av våre aller viktigste prioriteringer. Som den offisielle nettsiden til Wildrobin Casino i Norge ønsker vi å sikre at alle våre spillere har en trygg, morsom og kontrollert spillopplevelse. Vi tror på at spill skal være underholdning, og vi jobber aktivt for å hjelpe deg med å holde det slik. Denne siden gir deg informasjon om våre verktøy, retningslinjer og ressurser som er tilgjengelige for deg som spiller hos oss.</p>
+
+<h2>Hva er ansvarlig spilling?</h2>
+
+<p>Ansvarlig spilling handler om å ta bevisste valg når du spiller, og å sørge for at spillingen ikke påvirker livet ditt negativt. Det betyr å sette grenser for tid og penger brukt på spill, å gjenkjenne tegn på problematisk spilleatferd, og å søke hjelp dersom du trenger det. Hos Wildrobin Casino er vi dedikert til å gi deg de verktøyene og ressursene du trenger for å spille på en ansvarlig måte.</p>
+
+<p>Vi mener at spill bør være en positiv og underholdende aktivitet. Pengespill er ikke en måte å tjene penger på, og vi oppfordrer alltid våre spillere til å se på spill som en form for underholdning – ikke som en inntektskilde. Det er viktig å alltid spille med penger du har råd til å tape.</p>
+
+<h2>Våre verktøy for ansvarlig spilling</h2>
+
+<p>Vi har utviklet en rekke verktøy som hjelper deg med å holde kontrollen over spillingen din. Disse verktøyene er tilgjengelige direkte i din spillerkonto, og vi oppfordrer alle våre spillere til å bruke dem aktivt.</p>
+
+<h3>Innskuddsgrenser</h3>
+<p>Du kan sette daglige, ukentlige eller månedlige innskuddsgrenser på kontoen din. Dette hjelper deg med å kontrollere hvor mye penger du setter inn, og sikrer at du ikke bruker mer enn du har planlagt. Grensene trer i kraft umiddelbart, og eventuelle reduksjoner i grensene aktiveres med en gang. Økning av grenser krever en venteperiode for å sikre at avgjørelsen er gjennomtenkt.</p>
+
+<h3>Tapsgrenser</h3>
+<p>I tillegg til innskuddsgrenser tilbyr vi også tapsgrenser. Du kan bestemme maksimalt beløp du er villig til å tape i løpet av en gitt tidsperiode. Når grensen er nådd, vil du ikke lenger kunne plassere innsatser inntil perioden er over. Dette er et effektivt verktøy for å unngå at du jager tap.</p>
+
+<h3>Øktgrenser</h3>
+<p>Hos Wildrobin Casino kan du sette grenser for hvor lenge du spiller i én økt. Når tidsbegrensningen er nådd, vil du automatisk bli logget ut av kontoen din. Vi sender også regelmessige påminnelser om hvor lenge du har spilt, slik at du alltid er bevisst på tidsbruken din.</p>
+
+<h3>Selveksklusjon</h3>
+<p>Dersom du føler at du trenger en pause fra spill, tilbyr vi muligheten for selveksklusjon. Du kan velge å ekskludere deg selv fra Wildrobin Casino i en periode du selv bestemmer – fra noen dager til permanent eksklusjon. Under selveksklusjonsperioden vil du ikke ha tilgang til spillerkontoen din, og vi vil ikke sende deg markedsføringskommunikasjon. Vi tar selveksklusjon svært alvorlig og håndhever den strengt.</p>
+
+<h3>Realitetssjekk</h3>
+<p>Vår realitetssjekk-funksjon gir deg regelmessige varsler mens du spiller, som minner deg om hvor lenge du har vært innlogget og hvor mye du har brukt. Dette hjelper deg med å holde oversikt og ta informerte beslutninger om spillingen din.</p>
+
+<h3>Avkjølingsperiode</h3>
+<p>Dersom du trenger en kortere pause uten å gjennomføre en full selveksklusjon, kan du aktivere en avkjølingsperiode. I denne perioden vil kontoen din midlertidig bli sperret, og du vil ikke motta noen kampanjetilbud fra oss.</p>
+
+<h2>Gjenkjenne tegn på problematisk spilling</h2>
+
+<p>Det er viktig å kjenne igjen tegn på at spillingen kan ha blitt et problem. Noen vanlige advarselstegn inkluderer:</p>
+
+<ul>
+<li>Du bruker mer penger på spill enn du har råd til</li>
+<li>Du jager tap ved å spille mer for å vinne tilbake tapte penger</li>
+<li>Spilling påvirker ditt arbeid, familieliv eller sosiale relasjoner negativt</li>
+<li>Du lyver om spillingen din for familie og venner</li>
+<li>Du bruker penger ment til regninger eller andre nødvendigheter på spill</li>
+<li>Du føler deg rastløs eller irritabel når du ikke spiller</li>
+<li>Du tenker konstant på spill og planlegger neste spilløkt</li>
+</ul>
+
+<p>Dersom du kjenner deg igjen i noen av disse tegnene, oppfordrer vi deg til å ta kontakt med oss eller en av hjelpeorganisasjonene nedenfor.</p>
+
+<h2>Hjelp og støtteressurser</h2>
+
+<p>Vi samarbeider med anerkjente organisasjoner som tilbyr hjelp til personer med spillproblemer. Dersom du eller noen du kjenner trenger hjelp, anbefaler vi å ta kontakt med følgende ressurser:</p>
+
+<ul>
+<li><strong>Hjelpelinjen for spilleavhengighet:</strong> Ring 800 800 40 for gratis og anonym hjelp. Linjen er tilgjengelig hele døgnet.</li>
+<li><strong>Lotteritilsynet:</strong> Den norske reguleringsmyndigheten for pengespill tilbyr informasjon og ressurser om ansvarlig spilling.</li>
+<li><strong>Gamblers Anonymous Norge:</strong> En støttegruppe for personer med spillproblemer som tilbyr møter og fellesskap.</li>
+</ul>
+
+<p>Vi oppfordrer deg til å ikke nøle med å søke hjelp. Det er et tegn på styrke å erkjenne at man trenger støtte, og det finnes hjelp tilgjengelig.</p>
+
+<h2>Beskyttelse av mindreårige</h2>
+
+<p>Wildrobin Casino tillater ikke spill for personer under 18 år. Vi gjennomfører strenge aldersverifiseringsprosesser for alle nye spillere, og vi forbeholder oss retten til å be om ytterligere dokumentasjon når som helst. Dersom vi mistenker at en mindreårig har tilgang til en konto, vil vi umiddelbart stenge kontoen og gjennomføre en full undersøkelse.</p>
+
+<p>Vi anbefaler foreldre og foresatte å bruke foreldrekontrollprogramvare for å hindre mindreårige i å få tilgang til pengespillsider. Programmer som GamBlock og Betfilter kan hjelpe med dette.</p>
+
+<h2>Kontakt oss</h2>
+
+<p>Dersom du har spørsmål om ansvarlig spilling, ønsker å aktivere noen av våre verktøy, eller trenger hjelp av noe slag, er vårt kundeserviceteam alltid tilgjengelig for deg. Du kan kontakte oss via live chat, e-post eller telefon. Vi er her for å hjelpe deg med å ha en trygg og ansvarlig spillopplevelse hos Wildrobin Casino.</p>
+
+<p>Hos Wildrobin Casino er vi stolte av å tilby en trygg spillplattform for alle våre norske spillere. Vi jobber kontinuerlig med å forbedre våre ansvarlige spillverktøy og retningslinjer, og vi tar vår forpliktelse til spillernes velvære på det høyeste alvor. Spill ansvarlig – og husk at spill skal være gøy!</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="page-updated">
+    <div class="container">
+      <p>Siden oppdatert: <time class="updated-date" datetime=""></time></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h3 class="footer-title">Trygg spilling og sertifiseringer</h3>
+      <div class="trust-grid">
+        <a href="https://www.gamstop.co.uk/" target="_blank" rel="noopener noreferrer"><img src="../trust%20badges/gamstop.png" alt="Gamstop"></a>
+        <a href="https://www.gamcare.org.uk/" target="_blank" rel="noopener noreferrer"><img src="../trust%20badges/GamCare.png" alt="GamCare"></a>
+        <a href="https://www.egba.eu/" target="_blank" rel="noopener noreferrer"><img src="../trust%20badges/egba.svg" alt="EGBA"></a>
+        <a href="https://www.begambleaware.org/" target="_blank" rel="noopener noreferrer"><img src="../trust%20badges/gambleaware.png" alt="BeGambleAware"></a>
+        <a href="https://www.gamblingcommission.gov.uk/" target="_blank" rel="noopener noreferrer"><img src="../trust%20badges/uk-gambling-commission.svg" alt="UK Gambling Commission"></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Policy lenker">
+        <a href="../about-us/">om oss</a>
+        <a href="../contact-us/">kontakt oss</a>
+        <a href="../bonus-policy/">bonuspolicy</a>
+        <a href="../privacy-policy/">personvernpolicy</a>
+        <a href="../responsible-gambling/">ansvarlig spilling</a>
+        <a href="../terms-and-conditions/">vilkår og betingelser</a>
+      </nav>
+
+      <div class="provider-grid" aria-label="Game providers">
+        <img src="../providers/pragmatic-play-logo-png.png" alt="Pragmatic Play">
+        <img src="../providers/Games-Global.svg" alt="Games Global">
+        <img src="../providers/playngo.webp" alt="Play'n GO">
+        <img src="../providers/netentlogo.png" alt="NetEnt">
+        <img src="../providers/Yggdrasil%20Gaming_Logo_1.png" alt="Yggdrasil">
+        <img src="../providers/evolution.png" alt="Evolution">
+      </div>
+
+      <p class="copyright">Copyright © 2026 Wildrobin Casino. Alle rettigheter reservert.</p>
+    </div>
+  </footer>
+
+  <script>
+    const updatedDateNode = document.querySelector('.updated-date');
+    const now = new Date();
+    const dateLabel = new Intl.DateTimeFormat('nb-NO', {
+      day: '2-digit',
+      month: 'long',
+      year: 'numeric'
+    }).format(now);
+
+    if (updatedDateNode) {
+      updatedDateNode.textContent = dateLabel;
+      updatedDateNode.setAttribute('datetime', now.toISOString().split('T')[0]);
+    }
+  </script>
+</body>
+</html>
